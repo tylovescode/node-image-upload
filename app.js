@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 //Public folder
 app.use(express.static('./public'));
 
-app.get('/', () => res.render('index'));
+app.get('/', (req, res) => res.render('index'));
 
 
 
